@@ -36,5 +36,5 @@
   - Pick Image từ camera
   - Hoàn thiện thêm về giao diện
  
- 3. Những rắc rối gặp phải
+3. Những rắc rối gặp phải
   - Parse JSON khi 1 property của class là 1 class khác
