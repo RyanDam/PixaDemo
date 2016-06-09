@@ -21,7 +21,7 @@
 
 ### Ngày 9.6.2016
 
-~[Demo](warkthrough.gif)
+![Demo](warkthrough.gif)
 
 1. Đã làm được
   - Fix lại các lỗi của issue 1
