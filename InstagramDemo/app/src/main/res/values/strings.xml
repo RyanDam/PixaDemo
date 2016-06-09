@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">InstagramTest</string>
+    <string name="menu_login">Login</string>
+</resources>
