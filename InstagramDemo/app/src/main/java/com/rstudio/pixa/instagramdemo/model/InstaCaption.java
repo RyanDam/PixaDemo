@@ -1,11 +1,15 @@
 package com.rstudio.pixa.instagramdemo.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import org.json.JSONObject;
 
 /**
  * Created by Ryan on 6/9/16.
  */
 public class InstaCaption {
+
+    @SerializedName("text")
     public String text;
 
     public InstaCaption(String t) {

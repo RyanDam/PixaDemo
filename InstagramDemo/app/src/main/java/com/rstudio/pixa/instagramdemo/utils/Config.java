@@ -16,4 +16,7 @@ public class Config {
     public static final String SHPREF_KEY_CODE_TOKEN = "key_code";
 
     public static final String NUMBER_GET_PHOTO = "5";
+    public static final int DESIRSE_PICTURE_WIDTH = 500;
+
+    public static final String APP_PICTURE_FOLDER_NAME = "HABfit";
 }

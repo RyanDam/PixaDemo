@@ -15,5 +15,6 @@
         android:text="New Text"
         android:id="@+id/cell_cap"
         android:layout_margin="16dp"
-        android:maxLines="15" />
+        android:maxLines="15"
+        android:textColor="#ffffff" />
 </LinearLayout>

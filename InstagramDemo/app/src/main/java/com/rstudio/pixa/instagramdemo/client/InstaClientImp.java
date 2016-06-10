@@ -58,6 +58,11 @@ public class InstaClientImp {
         clientAPI = retrofitAPI.create(InstaClient.class);
     }
 
+    public void logout(Activity at) {
+        SharedPreferences.Editor e = at.getPreferences(Context.MODE_PRIVATE).edit();
+        e.remove(Config.SHPREF_KEY_ACCESS_TOKEN);
+    }
+
     public void login(final Activity ct, final LoginCallback cb) {
         String s = getAccessToken(ct);
         if (s == null) {

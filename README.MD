@@ -38,3 +38,16 @@
  
 3. Những rắc rối gặp phải
   - Parse JSON khi 1 property của class là 1 class khác
+
+### Ngày 10.6.2016
+
+![Demo](warkthrough2.gif)
+
+1. Đã làm được
+  - Tìm hiểu thêm về Material design
+  - Pick Image từ camera
+  - Pick Image từ Gallery
+
+2. Sẽ làm tiếp theo
+  - Tìm hiểu thêm về project chính
+

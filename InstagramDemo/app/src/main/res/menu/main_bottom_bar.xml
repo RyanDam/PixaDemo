@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/recent"
+        android:icon="@drawable/recent1"
+        android:title="Recent"/>
+    <item
+        android:id="@+id/camera"
+        android:icon="@drawable/camera1"
+        android:title="Camera"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile1"
+        android:title="Profile"/>
+</menu>

@@ -10,6 +10,7 @@ import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParseException;
+import com.google.gson.annotations.SerializedName;
 import com.rstudio.pixa.instagramdemo.utils.MyDeserializer;
 
 import org.json.JSONArray;
@@ -46,7 +47,10 @@ public class InstaPost {
         return jsonParser;
     }
 
+    @SerializedName("images")
     public InstaMedia images;
+
+    @SerializedName("caption")
     public InstaCaption caption;
 
     public InstaPost() {
@@ -59,15 +63,17 @@ public class InstaPost {
     }
 
     public static InstaPost getPost(JSONObject ob) {
-        Gson gson = InstaPost.getParser();
-        try {
-            InstaPost p = new InstaPost(InstaMedia.getMedia(ob.getJSONObject("images"))
-                    , InstaCaption.getCaption(ob.getJSONObject("caption")));
-            return p;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+//        Gson gson = InstaPost.getParser();
+//        try {
+//            InstaPost p = new InstaPost(InstaMedia.getMedia(ob.getJSONObject("images"))
+//                    , InstaCaption.getCaption(ob.getJSONObject("caption")));
+//            return p;
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+        Gson gson = new Gson();
+        InstaPost post = gson.fromJson(ob.toString(), InstaPost.class);
+        return post;
     }
 
     public static ArrayList<InstaPost> getPosts(JSONArray arr) {

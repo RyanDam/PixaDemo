@@ -2,5 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/menu_login"
         android:title="@string/menu_login"
-        android:showAsAction="always"/>
+        android:showAsAction="withText|always"/>
+    <item android:id="@+id/menu_logout"
+        android:title="@string/menu_logout"
+        android:showAsAction="withText|always"/>
+
 </menu>
